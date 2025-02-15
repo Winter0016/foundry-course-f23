@@ -1,0 +1,497 @@
+{
+    "contractName": "Deploy",
+    "abi": [
+        {
+            "inputs": [],
+            "name": "IS_SCRIPT",
+            "outputs": [
+                {
+                    "internalType": "bool",
+                    "name": "",
+                    "type": "bool"
+                }
+            ],
+            "stateMutability": "view",
+            "type": "function"
+        },
+        {
+            "inputs": [],
+            "name": "run",
+            "outputs": [
+                {
+                    "internalType": "contract FundMe",
+                    "name": "",
+                    "type": "address"
+                }
+            ],
+            "stateMutability": "nonpayable",
+            "type": "function"
+        }
+    ],
+    "metadata": "{\"compiler\":{\"version\":\"0.8.28+commit.7893614a\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"name\":\"IS_SCRIPT\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"run\",\"outputs\":[{\"internalType\":\"contract FundMe\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"/home/phucdeptrai/solidity-course/foundry-f23/foundry-fund-me-f24/script/DeployFundMe.s.sol\":\"Deploy\"},\"evmVersion\":\"cancun\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[],\"viaIR\":true},\"sources\":{\"/home/phucdeptrai/solidity-course/foundry-f23/foundry-fund-me-f24/lib/chainlink-brownie-contracts/contracts/src/v0.8/interfaces/AggregatorV3Interface.sol\":{\"keccak256\":\"0x6e6e4b0835904509406b070ee173b5bc8f677c19421b76be38aea3b1b3d30846\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://b3beaa37ee61e4ab615e250fbf01601ae481de843fd0ef55e6b44fd9d5fff8a7\",\"dweb:/ipfs/QmeZUVwd26LzK4Mfp8Zba5JbQNkZFfTzFu1A6FVMMZDg9c\"]},\"/home/phucdeptrai/solidity-course/foundry-f23/foundry-fund-me-f24/lib/forge-std/src/Base.sol\":{\"keccak256\":\"0x4ff1a785311017d1eedb1b4737956fa383067ad34eb439abfec1d989754dde1c\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://f553622969b9fdb930246704a4c10dfaee6b1a4468c142fa7eb9dc292a438224\",\"dweb:/ipfs/QmcxqHnqdQsMVtgsfH9VNLmZ3g7GhgNagfq7yvNCDcCHFK\"]},\"/home/phucdeptrai/solidity-course/foundry-f23/foundry-fund-me-f24/lib/forge-std/src/Script.sol\":{\"keccak256\":\"0x2315be74cc2826f9da401bea3da46a10ad6a6efdf73176d79160b453286d0ed2\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://af0d4dc826911d6cb4d6272ed5cbdb6950e1476141cca328e178b808d848789c\",\"dweb:/ipfs/QmV2ytjUEkV84VtdMs1nZqQTBoVE987cHboQMpiha5yo3e\"]},\"/home/phucdeptrai/solidity-course/foundry-f23/foundry-fund-me-f24/lib/forge-std/src/StdChains.sol\":{\"keccak256\":\"0x7dd11ac4db798fa196e00a0cfa288ce984acac881f1f34de03fe3187deed58de\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://2c15fb03d5545e2d8d3948661596410edec5ec278a73988914b14a05d0d54557\",\"dweb:/ipfs/QmWGjkLgp4wSrTrFxF8cmhghaXQp5VyXYQvWE1DUTPL4rG\"]},\"/home/phucdeptrai/solidity-course/foundry-f23/foundry-fund-me-f24/lib/forge-std/src/StdCheats.sol\":{\"keccak256\":\"0x28473c688050ed5cfdf6a47bfd59cdc7209e6a3eab8b438eb92055ea4066a49b\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://2d7e6391ced7256389f496fa35962d4ecdd6a066c5a54bdbef58abe6287c732b\",\"dweb:/ipfs/QmTuTqyapx9XraMX3mUjNjs3YHzBiQSfAQ38can96WWohM\"]},\"/home/phucdeptrai/solidity-course/foundry-f23/foundry-fund-me-f24/lib/forge-std/src/StdJson.sol\":{\"keccak256\":\"0xbc0132abe1c2accc2867c0f03667afffdf92f3e95a581bb03c9557eaa38ea500\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://eb6fab37dc73c219cfbb7b4f4998bcf7677ca5397a867e850f40232192073974\",\"dweb:/ipfs/QmUHsbVdp9SKmgek7ZfPcLTKrpZFXpqaqt4sVejzxGEQL3\"]},\"/home/phucdeptrai/solidity-course/foundry-f23/foundry-fund-me-f24/lib/forge-std/src/StdMath.sol\":{\"keccak256\":\"0xd90ad4fd8aeaeb8929964e686e769fdedd5eded3fc3815df194a0ab9f91a3fb2\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://7919b70f636c7b805223992f28ad1ad0145d6c1385b5931a3589aface5fe6c92\",\"dweb:/ipfs/QmY7FRaULwoGgFteF8GawjQJRfasNgpWnU2aiMsFrYpuTC\"]},\"/home/phucdeptrai/solidity-course/foundry-f23/foundry-fund-me-f24/lib/forge-std/src/StdStorage.sol\":{\"keccak256\":\"0xb91ab24383a5872b894fc93325eef1add6cbbf981628f18e860068bf88bb7dcc\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://2651e33b9ac8fc5803ed0a43078c1bf4fa90a0b0347aafd95776b02daccdcc57\",\"dweb:/ipfs/QmbdRyPuGJdZgnCuMnp7c1WsBo1Spf7j1KMmws1Z5rd4BQ\"]},\"/home/phucdeptrai/solidity-course/foundry-f23/foundry-fund-me-f24/lib/forge-std/src/StdStyle.sol\":{\"keccak256\":\"0x43e2a8a9b9c2574dabe74f11adf6f782df218f463540e3b5b563609fe108597d\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://51363ca97404cf4128e1141428949768c31929e75e014b02c85e887fbbb4f1b8\",\"dweb:/ipfs/QmVhtbQc2fU4rRmbcfBtz34mAgG4BAZBsbna1Ca4SkoPsK\"]},\"/home/phucdeptrai/solidity-course/foundry-f23/foundry-fund-me-f24/lib/forge-std/src/StdUtils.sol\":{\"keccak256\":\"0x4a5853bb9688c4e1c65626036cddd8ea2af84ef1046b704ddc3782d84a892410\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://09c1024e6aac9657312fcfcf5c3dee62c22edf9f74a1065e6924c4ec710ecafa\",\"dweb:/ipfs/QmRNURoTUkd6DiZnf8yY8o3stJpVQBifopdSpQgP9RhvRr\"]},\"/home/phucdeptrai/solidity-course/foundry-f23/foundry-fund-me-f24/lib/forge-std/src/Vm.sol\":{\"keccak256\":\"0xd7a115278b44e47816b2a9a5cea14b3c3f574182e289b29f98d5e2d0911ccae6\",\"license\":\"MIT OR Apache-2.0\",\"urls\":[\"bzz-raw://18c07088a04c9669c5eb6f2050bb944daba75603a97c1a03752d594f587cf1a4\",\"dweb:/ipfs/QmbzjH83hquj5uodqahA5YRW972PDnhtVu6cEu9YjAfVHH\"]},\"/home/phucdeptrai/solidity-course/foundry-f23/foundry-fund-me-f24/lib/forge-std/src/console.sol\":{\"keccak256\":\"0x4bbf47eb762cef93729d6ef15e78789957147039b113e5d4df48e3d3fd16d0f5\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://af9e3a7c3d82fb5b10b57ca4d1a82f2acbef80c077f6f6ef0cc0187c7bfd9f57\",\"dweb:/ipfs/QmR9VzmnBDJpgiDP6CHT6truehukF9HpYvuP6kRiJbDwPP\"]},\"/home/phucdeptrai/solidity-course/foundry-f23/foundry-fund-me-f24/lib/forge-std/src/console2.sol\":{\"keccak256\":\"0x3b8fe79f48f065a4e4d35362171304a33784c3a90febae5f2787805a438de12f\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://61de63af08803549299e68b6e6e88d40f3c5afac450e4ee0a228c66a61ba003d\",\"dweb:/ipfs/QmWVoQ5rrVxnczD4ZZoPbD4PC9Z3uExJtzjD4awTqd14MZ\"]},\"/home/phucdeptrai/solidity-course/foundry-f23/foundry-fund-me-f24/lib/forge-std/src/interfaces/IERC165.sol\":{\"keccak256\":\"0x414b2861b1acbf816ccb7346d3f16cf6c1e002e9e5e40d2f1f26fa5ddc2ea600\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://698352fb240868ea8f1d1fe389993035eeab930f10d06934f80ccfb2b6ccbfbc\",\"dweb:/ipfs/QmT6WLHAgXxFhh12kWym895oTzXid1326iZiwT3pyfggoT\"]},\"/home/phucdeptrai/solidity-course/foundry-f23/foundry-fund-me-f24/lib/forge-std/src/interfaces/IERC20.sol\":{\"keccak256\":\"0x4cab887298790f908c27de107e4e2907ca5413aee482ef776f8d2f353c5ef947\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://bb715e0c4a2bdbe432bb624501506041f06e878e0b72675aebba30ad2c2b72e7\",\"dweb:/ipfs/QmWhhLSvkxS2NrukJJHqFY8gDVE5r9rD4PfHvR24pwdKv9\"]},\"/home/phucdeptrai/solidity-course/foundry-f23/foundry-fund-me-f24/lib/forge-std/src/interfaces/IERC721.sol\":{\"keccak256\":\"0xf069262a264fdb69f8f37a10d2df7374649e9ba73f8414c9c8a3b51184625f15\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://924a41ca82a68ffbd503a5faf2f76d13e9938f10501a71094716f12bb64b4b7f\",\"dweb:/ipfs/QmdWnqfKc5ZGhmxNPTde4zrFchnv9Yk9MpCMb2rdhXE5gm\"]},\"/home/phucdeptrai/solidity-course/foundry-f23/foundry-fund-me-f24/lib/forge-std/src/interfaces/IMulticall3.sol\":{\"keccak256\":\"0x7aac1389150499a922d1f9ef5749c908cef127cb2075b92fa17e9cb611263d0a\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://d95ebb7c7c463e08ebc12dab639945752fb2480acfc6e86da32f72732a7fd0c0\",\"dweb:/ipfs/QmNXK8P8oPWwajsQHvAHw3JPyQidPLCGQN3hWu1Lk6PBL2\"]},\"/home/phucdeptrai/solidity-course/foundry-f23/foundry-fund-me-f24/lib/forge-std/src/mocks/MockERC20.sol\":{\"keccak256\":\"0xadbdfc6639edec00ba94bb1133a0fd8de31ccafe45c2ef5df9b3ca61b60b559b\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://bc766f01bccf669abac8cc7b2096cc1352a66471ca3772ae61b1801dedc4ed4f\",\"dweb:/ipfs/QmNigaPj1LYkP7Z5xr4ijkUxr2K66fDGeoifG3WoM9ruyw\"]},\"/home/phucdeptrai/solidity-course/foundry-f23/foundry-fund-me-f24/lib/forge-std/src/mocks/MockERC721.sol\":{\"keccak256\":\"0xbfbb755bb379f58b97699f7cda0e9a2b9113daaa072e41b280a5ce6a3bff44c9\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://5ae0c31d29db14d6a0e9b62d33d550feb307f48a6f45068901a013321f337f87\",\"dweb:/ipfs/QmX25DVXW6XZDvRm6SNBGCWrZQ6oNhdq5CmgtVocvsUdwv\"]},\"/home/phucdeptrai/solidity-course/foundry-f23/foundry-fund-me-f24/lib/forge-std/src/safeconsole.sol\":{\"keccak256\":\"0xbef9786cb49d3eade757bad87568c49c8c8f35721f0193c95ffb055d9e466e11\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://3bafd2b0b2d28068d329f95ea8a1fbce3719c257fcb863fc01abcbafd8d531ab\",\"dweb:/ipfs/QmUeaFjKWTVDBsHVfSob4mwt6A5hTnKDz22HaUXeZhypa3\"]},\"/home/phucdeptrai/solidity-course/foundry-f23/foundry-fund-me-f24/script/DeployFundMe.s.sol\":{\"keccak256\":\"0x34e5b3ef65fbb54e43e21a707fe76567e74273417da416c3a2f5997e9747a28c\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://3da783eaff922425c534c2ed4f357f772ff2bad41611d64b9d2baf304d595346\",\"dweb:/ipfs/Qmd2fxL5WqnSw2TRZRwd6Uvr8RFHmQNFvJoN3iu88ynSoX\"]},\"/home/phucdeptrai/solidity-course/foundry-f23/foundry-fund-me-f24/src/FundMe.sol\":{\"keccak256\":\"0x7a114b741ac4760a96fde614043e8378490842c80ebb5275b0231571dd79460c\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://7ca8c3850499a3a964bbfd724b56fd549b206b560744152b82e656a808e6c7a5\",\"dweb:/ipfs/Qmep2KLHqeX8wC4iE8VjkzFoxx7eudCW44iYXPtFxQKsj4\"]},\"/home/phucdeptrai/solidity-course/foundry-f23/foundry-fund-me-f24/src/PriceConverter.sol\":{\"keccak256\":\"0x4b976edd5671e16aa584c2d5494d6cb9397e37fcd9eb7ecff29f0b815dabcd89\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://d659698dca634cc09a8b1cc66d25f5595c1e6609997073e49030e1de6e05c013\",\"dweb:/ipfs/Qmf16zyjX7v6WCbBoDzdWszjPpq1FYmqpKrAKBKS5uQ7GE\"]}},\"version\":1}",
+    "bytecode": "608080604052346026576201000162ff00ff19600c541617600c556108bb908161002b8239f35b5f80fdfe6080806040526004361015610012575f80fd5b5f905f3560e01c908163c04062261461005c575063f8ccbf4714610034575f80fd5b34610059578060031936011261005957602060ff600c5460101c166040519015158152f35b80fd5b9050346101cc575f3660031901126101cc57737109709ecfa91a80626ff3989d68f67f5b1dd12d3b156101cc57637fb5297f60e01b81525f8160048183737109709ecfa91a80626ff3989d68f67f5b1dd12d5af180156101c1576101ae575b5060405161067f8082019082821067ffffffffffffffff83111761019a576020918391610207833973694aa1769357215de4fac081bf1f309adc325306815203019082f0801561018d57737109709ecfa91a80626ff3989d68f67f5b1dd12d3b1561017e57604051633b756e9b60e11b8152828160048183737109709ecfa91a80626ff3989d68f67f5b1dd12d5af1801561018257610169575b6040516001600160a01b0383168152602090f35b6101748380926101d0565b61017e5781610155565b5080fd5b6040513d85823e3d90fd5b50604051903d90823e3d90fd5b634e487b7160e01b84526041600452602484fd5b6101ba91505f906101d0565b5f5f6100bb565b6040513d5f823e3d90fd5b5f80fd5b90601f8019910116810190811067ffffffffffffffff8211176101f257604052565b634e487b7160e01b5f52604160045260245ffdfe608034607e57601f61067f38819003918201601f19168301916001600160401b03831184841017608257808492602094604052833981010312607e57516001600160a01b03811690819003607e57600280546001600160a01b03199081163317909155600380549091169190911790556040516105e890816100978239f35b5f80fd5b634e487b7160e01b5f52604160045260245ffdfe6080806040526004361015610028575b5036156100205761001e61041e565b005b61001e61041e565b5f3560e01c9081630d8e6e2c14610348575080633ccfd60b1461015f5780633e47d6f3146101245780636b69a59214610102578063b60d4288146100ef578063dba6335f146100c75763dc0d3dff14610081575f61000f565b346100c35760203660031901126100c3576004356001548110156100c3576100aa6020916103d0565b905460405160039290921b1c6001600160a01b03168152f35b5f80fd5b346100c3575f3660031901126100c3576002546040516001600160a01b039091168152602090f35b5f3660031901126100c35761001e61041e565b346100c3575f3660031901126100c3576020604051674563918244f400008152f35b346100c35760203660031901126100c3576004356001600160a01b038116908190036100c3575f525f602052602060405f2054604051908152f35b346100c3575f3660031901126100c3576002546001600160a01b03163303610339575f5b6001548110156101b957806101996001926103d0565b838060a01b0391549060031b1c165f525f6020525f604081205501610183565b60206040516101c882826103fc565b5f81525f36813780519067ffffffffffffffff821161028457600160401b8211610284578290600154836001558084106102d8575b500160015f525f5b82811061029d57835f80808047335af13d15610298573d67ffffffffffffffff81116102845760405190610242601f8201601f19168501836103fc565b81525f833d92013e5b1561025257005b6064906040519062461bcd60e51b82526004820152600b60248201526a10d85b1b0819985a5b195960aa1b6044820152fd5b634e487b7160e01b5f52604160045260245ffd5b61024b565b81516001600160a01b03167fb10e2d527612073b26eecdfd717e6a320cf44b4afac2b0732d9fcbe2b7fa0cf682015590830190600101610205565b7fb10e2d527612073b26eecdfd717e6a320cf44b4afac2b0732d9fcbe2b7fa0cf601837fb10e2d527612073b26eecdfd717e6a320cf44b4afac2b0732d9fcbe2b7fa0cf6015b81811061032b57506101fd565b5f815585935060010161031e565b6387b53d7160e01b5f5260045ffd5b346100c3575f3660031901126100c35760035463054fd4d560e41b8252602090829060049082906001600160a01b03165afa80156103c5575f90610392575b602090604051908152f35b506020813d6020116103bd575b816103ac602093836103fc565b810103126100c35760209051610387565b3d915061039f565b6040513d5f823e3d90fd5b6001548110156103e85760015f5260205f2001905f90565b634e487b7160e01b5f52603260045260245ffd5b90601f8019910116810190811067ffffffffffffffff82111761028457604052565b600354604051633fabe5a360e21b81529060a090829060049082906001600160a01b03165afa9081156103c5575f9161054e575b506402540be4008102908082056402540be40014811517156104f5576402540be40090340202908082043414901517156104f557670de0b6b3a7640000674563918244f4000091041061050957335f525f60205260405f208054903482018092116104f55755600154600160401b811015610284578060016104d792016001556103d0565b81546001600160a01b0360039290921b91821b19163390911b179055565b634e487b7160e01b5f52601160045260245ffd5b60405162461bcd60e51b815260206004820152601b60248201527f596f75206e65656420746f207370656e64206d6f7265204554482100000000006044820152606490fd5b905060a0813d60a011610593575b8161056960a093836103fc565b810103126100c35761057a8161059b565b5061058c60806020830151920161059b565b505f610452565b3d915061055c565b519069ffffffffffffffffffff821682036100c35756fea2646970667358221220ad8c41c3bacf757cc54110df5316340fcab784bc816565a0d9f6dcb3479839c064736f6c634300081c0033a2646970667358221220d3e512dc89c517a550662a994b6a041ace8e31af0fe84e60d62a5877c7a6979964736f6c634300081c0033",
+    "deployedBytecode": "6080806040526004361015610012575f80fd5b5f905f3560e01c908163c04062261461005c575063f8ccbf4714610034575f80fd5b34610059578060031936011261005957602060ff600c5460101c166040519015158152f35b80fd5b9050346101cc575f3660031901126101cc57737109709ecfa91a80626ff3989d68f67f5b1dd12d3b156101cc57637fb5297f60e01b81525f8160048183737109709ecfa91a80626ff3989d68f67f5b1dd12d5af180156101c1576101ae575b5060405161067f8082019082821067ffffffffffffffff83111761019a576020918391610207833973694aa1769357215de4fac081bf1f309adc325306815203019082f0801561018d57737109709ecfa91a80626ff3989d68f67f5b1dd12d3b1561017e57604051633b756e9b60e11b8152828160048183737109709ecfa91a80626ff3989d68f67f5b1dd12d5af1801561018257610169575b6040516001600160a01b0383168152602090f35b6101748380926101d0565b61017e5781610155565b5080fd5b6040513d85823e3d90fd5b50604051903d90823e3d90fd5b634e487b7160e01b84526041600452602484fd5b6101ba91505f906101d0565b5f5f6100bb565b6040513d5f823e3d90fd5b5f80fd5b90601f8019910116810190811067ffffffffffffffff8211176101f257604052565b634e487b7160e01b5f52604160045260245ffdfe608034607e57601f61067f38819003918201601f19168301916001600160401b03831184841017608257808492602094604052833981010312607e57516001600160a01b03811690819003607e57600280546001600160a01b03199081163317909155600380549091169190911790556040516105e890816100978239f35b5f80fd5b634e487b7160e01b5f52604160045260245ffdfe6080806040526004361015610028575b5036156100205761001e61041e565b005b61001e61041e565b5f3560e01c9081630d8e6e2c14610348575080633ccfd60b1461015f5780633e47d6f3146101245780636b69a59214610102578063b60d4288146100ef578063dba6335f146100c75763dc0d3dff14610081575f61000f565b346100c35760203660031901126100c3576004356001548110156100c3576100aa6020916103d0565b905460405160039290921b1c6001600160a01b03168152f35b5f80fd5b346100c3575f3660031901126100c3576002546040516001600160a01b039091168152602090f35b5f3660031901126100c35761001e61041e565b346100c3575f3660031901126100c3576020604051674563918244f400008152f35b346100c35760203660031901126100c3576004356001600160a01b038116908190036100c3575f525f602052602060405f2054604051908152f35b346100c3575f3660031901126100c3576002546001600160a01b03163303610339575f5b6001548110156101b957806101996001926103d0565b838060a01b0391549060031b1c165f525f6020525f604081205501610183565b60206040516101c882826103fc565b5f81525f36813780519067ffffffffffffffff821161028457600160401b8211610284578290600154836001558084106102d8575b500160015f525f5b82811061029d57835f80808047335af13d15610298573d67ffffffffffffffff81116102845760405190610242601f8201601f19168501836103fc565b81525f833d92013e5b1561025257005b6064906040519062461bcd60e51b82526004820152600b60248201526a10d85b1b0819985a5b195960aa1b6044820152fd5b634e487b7160e01b5f52604160045260245ffd5b61024b565b81516001600160a01b03167fb10e2d527612073b26eecdfd717e6a320cf44b4afac2b0732d9fcbe2b7fa0cf682015590830190600101610205565b7fb10e2d527612073b26eecdfd717e6a320cf44b4afac2b0732d9fcbe2b7fa0cf601837fb10e2d527612073b26eecdfd717e6a320cf44b4afac2b0732d9fcbe2b7fa0cf6015b81811061032b57506101fd565b5f815585935060010161031e565b6387b53d7160e01b5f5260045ffd5b346100c3575f3660031901126100c35760035463054fd4d560e41b8252602090829060049082906001600160a01b03165afa80156103c5575f90610392575b602090604051908152f35b506020813d6020116103bd575b816103ac602093836103fc565b810103126100c35760209051610387565b3d915061039f565b6040513d5f823e3d90fd5b6001548110156103e85760015f5260205f2001905f90565b634e487b7160e01b5f52603260045260245ffd5b90601f8019910116810190811067ffffffffffffffff82111761028457604052565b600354604051633fabe5a360e21b81529060a090829060049082906001600160a01b03165afa9081156103c5575f9161054e575b506402540be4008102908082056402540be40014811517156104f5576402540be40090340202908082043414901517156104f557670de0b6b3a7640000674563918244f4000091041061050957335f525f60205260405f208054903482018092116104f55755600154600160401b811015610284578060016104d792016001556103d0565b81546001600160a01b0360039290921b91821b19163390911b179055565b634e487b7160e01b5f52601160045260245ffd5b60405162461bcd60e51b815260206004820152601b60248201527f596f75206e65656420746f207370656e64206d6f7265204554482100000000006044820152606490fd5b905060a0813d60a011610593575b8161056960a093836103fc565b810103126100c35761057a8161059b565b5061058c60806020830151920161059b565b505f610452565b3d915061055c565b519069ffffffffffffffffffff821682036100c35756fea2646970667358221220ad8c41c3bacf757cc54110df5316340fcab784bc816565a0d9f6dcb3479839c064736f6c634300081c0033a2646970667358221220d3e512dc89c517a550662a994b6a041ace8e31af0fe84e60d62a5877c7a6979964736f6c634300081c0033",
+    "sourceMap": "219:242:20:-:0;;;;;;;;;;3166:4:3;219:242:20;;;3166:4:3;219:242:20;;;;;;;;;;;",
+    "deployedSourceMap": "219:242:20:-:0;;;;;;;;;;;;;;;;;;;;;;;;;;1590:14:1;219:242:20;1590:14:1;;;219:242:20;;;;;;;;;;;;;;;;;800:28:2;219:242:20;;;;;;;;;;;;;;;;;;;;;;;-1:-1:-1;;219:242:20;;;;;302:19;;;;-1:-1:-1;;;302:19:20;;219:242;302:19;219:242;302:19;219:242;;302:19;;;;;;;;219:242;;;;347:54;;;;;;;;;;;;;;1590:14:1;347:54:20;;;;;;358:42;1590:14:1;;347:54:20;;;;;;;;;219:242;411:18;;;;219:242;;-1:-1:-1;;;411:18:20;;;219:242;;;411:18;219:242;411:18;;;;;;;;219:242;;;-1:-1:-1;;;;;219:242:20;;;;1590:14:1;;219:242:20;411:18;;;;;;:::i;:::-;219:242;;411:18;;;219:242;;;;411:18;219:242;;1590:14:1;219:242:20;;1590:14:1;;;;347:54:20;219:242;;;1590:14:1;;;;;;;;347:54:20;-1:-1:-1;;;1590:14:1;;;219:242:20;1590:14:1;;;;302:19:20;;;;219:242;302:19;;:::i;:::-;219:242;302:19;;;;219:242;;1590:14:1;219:242:20;1590:14:1;;;;;302:19:20;219:242;;;1590:14:1;;;;;;;;;;;;;;;;;;;;;:::o;:::-;;;;-1:-1:-1;1590:14:1;;;;;-1:-1:-1;1590:14:1",
+    "sourcePath": "/home/phucdeptrai/solidity-course/foundry-f23/foundry-fund-me-f24/script/DeployFundMe.s.sol",
+    "compiler": {
+        "name": "solc",
+        "version": "0.8.28+commit.7893614a"
+    },
+    "ast": {
+        "absolutePath": "/home/phucdeptrai/solidity-course/foundry-f23/foundry-fund-me-f24/script/DeployFundMe.s.sol",
+        "exportedSymbols": {
+            "Deploy": [
+                36563
+            ],
+            "FundMe": [
+                36738
+            ],
+            "Script": [
+                159
+            ]
+        },
+        "id": 36564,
+        "license": "MIT",
+        "nodeType": "SourceUnit",
+        "nodes": [
+            {
+                "id": 36528,
+                "literals": [
+                    "solidity",
+                    "^",
+                    "0.8",
+                    ".18"
+                ],
+                "nodeType": "PragmaDirective",
+                "src": "32:24:20"
+            },
+            {
+                "absolutePath": "/home/phucdeptrai/solidity-course/foundry-f23/foundry-fund-me-f24/lib/forge-std/src/Script.sol",
+                "file": "/home/phucdeptrai/solidity-course/foundry-f23/foundry-fund-me-f24/lib/forge-std/src/Script.sol",
+                "id": 36530,
+                "nameLocation": "-1:-1:-1",
+                "nodeType": "ImportDirective",
+                "scope": 36564,
+                "sourceUnit": 160,
+                "src": "57:118:20",
+                "symbolAliases": [
+                    {
+                        "foreign": {
+                            "id": 36529,
+                            "name": "Script",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 159,
+                            "src": "65:6:20",
+                            "typeDescriptions": {}
+                        },
+                        "nameLocation": "-1:-1:-1"
+                    }
+                ],
+                "unitAlias": ""
+            },
+            {
+                "absolutePath": "/home/phucdeptrai/solidity-course/foundry-f23/foundry-fund-me-f24/src/FundMe.sol",
+                "file": "../src/FundMe.sol",
+                "id": 36532,
+                "nameLocation": "-1:-1:-1",
+                "nodeType": "ImportDirective",
+                "scope": 36564,
+                "sourceUnit": 36739,
+                "src": "176:41:20",
+                "symbolAliases": [
+                    {
+                        "foreign": {
+                            "id": 36531,
+                            "name": "FundMe",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 36738,
+                            "src": "184:6:20",
+                            "typeDescriptions": {}
+                        },
+                        "nameLocation": "-1:-1:-1"
+                    }
+                ],
+                "unitAlias": ""
+            },
+            {
+                "abstract": false,
+                "baseContracts": [
+                    {
+                        "baseName": {
+                            "id": 36533,
+                            "name": "Script",
+                            "nameLocations": [
+                                "238:6:20"
+                            ],
+                            "nodeType": "IdentifierPath",
+                            "referencedDeclaration": 159,
+                            "src": "238:6:20"
+                        },
+                        "id": 36534,
+                        "nodeType": "InheritanceSpecifier",
+                        "src": "238:6:20"
+                    }
+                ],
+                "canonicalName": "Deploy",
+                "contractDependencies": [
+                    36738
+                ],
+                "contractKind": "contract",
+                "fullyImplemented": true,
+                "id": 36563,
+                "linearizedBaseContracts": [
+                    36563,
+                    159,
+                    8937,
+                    3064,
+                    1004,
+                    120,
+                    108
+                ],
+                "name": "Deploy",
+                "nameLocation": "228:6:20",
+                "nodeType": "ContractDefinition",
+                "nodes": [
+                    {
+                        "body": {
+                            "id": 36561,
+                            "nodeType": "Block",
+                            "src": "292:167:20",
+                            "statements": [
+                                {
+                                    "expression": {
+                                        "arguments": [],
+                                        "expression": {
+                                            "argumentTypes": [],
+                                            "expression": {
+                                                "id": 36540,
+                                                "name": "vm",
+                                                "nodeType": "Identifier",
+                                                "overloadedDeclarations": [],
+                                                "referencedDeclaration": 104,
+                                                "src": "302:2:20",
+                                                "typeDescriptions": {
+                                                    "typeIdentifier": "t_contract$_Vm_$13694",
+                                                    "typeString": "contract Vm"
+                                                }
+                                            },
+                                            "id": 36542,
+                                            "isConstant": false,
+                                            "isLValue": false,
+                                            "isPure": false,
+                                            "lValueRequested": false,
+                                            "memberLocation": "305:14:20",
+                                            "memberName": "startBroadcast",
+                                            "nodeType": "MemberAccess",
+                                            "referencedDeclaration": 10830,
+                                            "src": "302:17:20",
+                                            "typeDescriptions": {
+                                                "typeIdentifier": "t_function_external_nonpayable$__$returns$__$",
+                                                "typeString": "function () external"
+                                            }
+                                        },
+                                        "id": 36543,
+                                        "isConstant": false,
+                                        "isLValue": false,
+                                        "isPure": false,
+                                        "kind": "functionCall",
+                                        "lValueRequested": false,
+                                        "nameLocations": [],
+                                        "names": [],
+                                        "nodeType": "FunctionCall",
+                                        "src": "302:19:20",
+                                        "tryCall": false,
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_tuple$__$",
+                                            "typeString": "tuple()"
+                                        }
+                                    },
+                                    "id": 36544,
+                                    "nodeType": "ExpressionStatement",
+                                    "src": "302:19:20"
+                                },
+                                {
+                                    "assignments": [
+                                        36547
+                                    ],
+                                    "declarations": [
+                                        {
+                                            "constant": false,
+                                            "id": 36547,
+                                            "mutability": "mutable",
+                                            "name": "fundMe",
+                                            "nameLocation": "338:6:20",
+                                            "nodeType": "VariableDeclaration",
+                                            "scope": 36561,
+                                            "src": "331:13:20",
+                                            "stateVariable": false,
+                                            "storageLocation": "default",
+                                            "typeDescriptions": {
+                                                "typeIdentifier": "t_contract$_FundMe_$36738",
+                                                "typeString": "contract FundMe"
+                                            },
+                                            "typeName": {
+                                                "id": 36546,
+                                                "nodeType": "UserDefinedTypeName",
+                                                "pathNode": {
+                                                    "id": 36545,
+                                                    "name": "FundMe",
+                                                    "nameLocations": [
+                                                        "331:6:20"
+                                                    ],
+                                                    "nodeType": "IdentifierPath",
+                                                    "referencedDeclaration": 36738,
+                                                    "src": "331:6:20"
+                                                },
+                                                "referencedDeclaration": 36738,
+                                                "src": "331:6:20",
+                                                "typeDescriptions": {
+                                                    "typeIdentifier": "t_contract$_FundMe_$36738",
+                                                    "typeString": "contract FundMe"
+                                                }
+                                            },
+                                            "visibility": "internal"
+                                        }
+                                    ],
+                                    "id": 36553,
+                                    "initialValue": {
+                                        "arguments": [
+                                            {
+                                                "hexValue": "307836393441413137363933353732313544453446414330383162663166333039614443333235333036",
+                                                "id": 36551,
+                                                "isConstant": false,
+                                                "isLValue": false,
+                                                "isPure": true,
+                                                "kind": "number",
+                                                "lValueRequested": false,
+                                                "nodeType": "Literal",
+                                                "src": "358:42:20",
+                                                "typeDescriptions": {
+                                                    "typeIdentifier": "t_address",
+                                                    "typeString": "address"
+                                                },
+                                                "value": "0x694AA1769357215DE4FAC081bf1f309aDC325306"
+                                            }
+                                        ],
+                                        "expression": {
+                                            "argumentTypes": [
+                                                {
+                                                    "typeIdentifier": "t_address",
+                                                    "typeString": "address"
+                                                }
+                                            ],
+                                            "id": 36550,
+                                            "isConstant": false,
+                                            "isLValue": false,
+                                            "isPure": false,
+                                            "lValueRequested": false,
+                                            "nodeType": "NewExpression",
+                                            "src": "347:10:20",
+                                            "typeDescriptions": {
+                                                "typeIdentifier": "t_function_creation_nonpayable$_t_address_$returns$_t_contract$_FundMe_$36738_$",
+                                                "typeString": "function (address) returns (contract FundMe)"
+                                            },
+                                            "typeName": {
+                                                "id": 36549,
+                                                "nodeType": "UserDefinedTypeName",
+                                                "pathNode": {
+                                                    "id": 36548,
+                                                    "name": "FundMe",
+                                                    "nameLocations": [
+                                                        "351:6:20"
+                                                    ],
+                                                    "nodeType": "IdentifierPath",
+                                                    "referencedDeclaration": 36738,
+                                                    "src": "351:6:20"
+                                                },
+                                                "referencedDeclaration": 36738,
+                                                "src": "351:6:20",
+                                                "typeDescriptions": {
+                                                    "typeIdentifier": "t_contract$_FundMe_$36738",
+                                                    "typeString": "contract FundMe"
+                                                }
+                                            }
+                                        },
+                                        "id": 36552,
+                                        "isConstant": false,
+                                        "isLValue": false,
+                                        "isPure": false,
+                                        "kind": "functionCall",
+                                        "lValueRequested": false,
+                                        "nameLocations": [],
+                                        "names": [],
+                                        "nodeType": "FunctionCall",
+                                        "src": "347:54:20",
+                                        "tryCall": false,
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_contract$_FundMe_$36738",
+                                            "typeString": "contract FundMe"
+                                        }
+                                    },
+                                    "nodeType": "VariableDeclarationStatement",
+                                    "src": "331:70:20"
+                                },
+                                {
+                                    "expression": {
+                                        "arguments": [],
+                                        "expression": {
+                                            "argumentTypes": [],
+                                            "expression": {
+                                                "id": 36554,
+                                                "name": "vm",
+                                                "nodeType": "Identifier",
+                                                "overloadedDeclarations": [],
+                                                "referencedDeclaration": 104,
+                                                "src": "411:2:20",
+                                                "typeDescriptions": {
+                                                    "typeIdentifier": "t_contract$_Vm_$13694",
+                                                    "typeString": "contract Vm"
+                                                }
+                                            },
+                                            "id": 36556,
+                                            "isConstant": false,
+                                            "isLValue": false,
+                                            "isPure": false,
+                                            "lValueRequested": false,
+                                            "memberLocation": "414:13:20",
+                                            "memberName": "stopBroadcast",
+                                            "nodeType": "MemberAccess",
+                                            "referencedDeclaration": 10846,
+                                            "src": "411:16:20",
+                                            "typeDescriptions": {
+                                                "typeIdentifier": "t_function_external_nonpayable$__$returns$__$",
+                                                "typeString": "function () external"
+                                            }
+                                        },
+                                        "id": 36557,
+                                        "isConstant": false,
+                                        "isLValue": false,
+                                        "isPure": false,
+                                        "kind": "functionCall",
+                                        "lValueRequested": false,
+                                        "nameLocations": [],
+                                        "names": [],
+                                        "nodeType": "FunctionCall",
+                                        "src": "411:18:20",
+                                        "tryCall": false,
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_tuple$__$",
+                                            "typeString": "tuple()"
+                                        }
+                                    },
+                                    "id": 36558,
+                                    "nodeType": "ExpressionStatement",
+                                    "src": "411:18:20"
+                                },
+                                {
+                                    "expression": {
+                                        "id": 36559,
+                                        "name": "fundMe",
+                                        "nodeType": "Identifier",
+                                        "overloadedDeclarations": [],
+                                        "referencedDeclaration": 36547,
+                                        "src": "446:6:20",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_contract$_FundMe_$36738",
+                                            "typeString": "contract FundMe"
+                                        }
+                                    },
+                                    "functionReturnParameters": 36539,
+                                    "id": 36560,
+                                    "nodeType": "Return",
+                                    "src": "439:13:20"
+                                }
+                            ]
+                        },
+                        "functionSelector": "c0406226",
+                        "id": 36562,
+                        "implemented": true,
+                        "kind": "function",
+                        "modifiers": [],
+                        "name": "run",
+                        "nameLocation": "260:3:20",
+                        "nodeType": "FunctionDefinition",
+                        "parameters": {
+                            "id": 36535,
+                            "nodeType": "ParameterList",
+                            "parameters": [],
+                            "src": "263:2:20"
+                        },
+                        "returnParameters": {
+                            "id": 36539,
+                            "nodeType": "ParameterList",
+                            "parameters": [
+                                {
+                                    "constant": false,
+                                    "id": 36538,
+                                    "mutability": "mutable",
+                                    "name": "",
+                                    "nameLocation": "-1:-1:-1",
+                                    "nodeType": "VariableDeclaration",
+                                    "scope": 36562,
+                                    "src": "284:6:20",
+                                    "stateVariable": false,
+                                    "storageLocation": "default",
+                                    "typeDescriptions": {
+                                        "typeIdentifier": "t_contract$_FundMe_$36738",
+                                        "typeString": "contract FundMe"
+                                    },
+                                    "typeName": {
+                                        "id": 36537,
+                                        "nodeType": "UserDefinedTypeName",
+                                        "pathNode": {
+                                            "id": 36536,
+                                            "name": "FundMe",
+                                            "nameLocations": [
+                                                "284:6:20"
+                                            ],
+                                            "nodeType": "IdentifierPath",
+                                            "referencedDeclaration": 36738,
+                                            "src": "284:6:20"
+                                        },
+                                        "referencedDeclaration": 36738,
+                                        "src": "284:6:20",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_contract$_FundMe_$36738",
+                                            "typeString": "contract FundMe"
+                                        }
+                                    },
+                                    "visibility": "internal"
+                                }
+                            ],
+                            "src": "283:8:20"
+                        },
+                        "scope": 36563,
+                        "src": "251:208:20",
+                        "stateMutability": "nonpayable",
+                        "virtual": false,
+                        "visibility": "external"
+                    }
+                ],
+                "scope": 36564,
+                "src": "219:242:20",
+                "usedErrors": [],
+                "usedEvents": []
+            }
+        ],
+        "src": "32:430:20"
+    },
+    "functionHashes": {
+        "IS_SCRIPT()": "f8ccbf47",
+        "run()": "c0406226"
+    },
+    "gasEstimates": {
+        "creation": {
+            "codeDepositCost": "447000",
+            "executionCost": "24708",
+            "totalCost": "471708"
+        },
+        "external": {
+            "IS_SCRIPT()": "2299",
+            "run()": "infinite"
+        }
+    }
+}

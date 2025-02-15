@@ -1,0 +1,60 @@
+* command for test:
+    forge test
+    -command for testing a specific function
+    forge test --match-test name_of_function
+    -command for testing on a chain(you choose the chain,some test only worked on sepolia chain):
+    forge test -vvv --fork-url $SEPOLIA_RCP_URL ( with helperconfig.s.sol even without sepolia rcp or eth rcp we can test on anvil (mostly about interface since some test need function from interface from other contract so we created our own interface) )
+    -command for more detail testing(for all files)
+    forge coverage
+
+* Storage (related to gas saving)
+    - storage: variable in function dont store in storage it's considered memory when the function is finished it will be erased
+
+    constant & immutable are not stored in storage as well.
+    you should put s_ before a variable which will stand for it will be stored in storage and i_ before a variable which stands for immutable variable
+
+    To check the storage of a function you can type:
+    forge inspect *file name you want to check( you dont need to add .sol or anyendpoint)* storageLayout
+
+* An update of casting explicity from address
+    you can no longer cast explicity from address to uint256 you can now use uint160
+    example for hoax:
+            for(uint160 i = startingFunderIndex; i < numnberoFunders; i++){
+                //vm.prank
+                //vm.deal new address
+                hoax(address(i),SEND_VALUE);
+            }
+
+* Debug with chisel(not often used but great to know)
+    there is another way to debug is use tool chisel:
+    open terminal and type chisel 
+
+* Check gas cost
+    To know how much gas does a function cost you can type : forge snapshot --match-test *function name* ( a file ".gas-snapshot" will be created in folder)
+    - you can type : forge snapshot : this will run test.t.sol and display the gas cost of each test function
+
+* Type of test
+    - 4 different type of test
+        1. Unit
+        - testing a specific part of our code (forge test --match-test *function name you want to test* )
+        2. Integration
+        - Testing how our code works with other parts of our code
+        3. forked
+        -Testing our code on a simulated real enfiroment
+        4. staging
+        - Testing our code in a real enviroment that is not prod
+
+* Basic step to write a README
+    1. Proper README
+    2. Integration tests
+        1. PIT STOP! How to make running these scripts easier?
+        (sudo apt install make) then a make a file name Makefile (chatgpt recommend this but i haven't try yet: sudo apt install build-essential)
+    3. Programatic verification
+    4. Push to Github
+
+* You can check remappings: forge remappings
+
+* install devop tools : forge install Cyfrin/foundry-devops --no-commit
+
+* Float number problem in solidity(CAUTION!):
+    No Floating-Point Support: Solidity does not support floating-point numbers or decimals directly. All values must be integers. if the calculation is less than 1 the result will be 0 by default! BE CAUTION !
