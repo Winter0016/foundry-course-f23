@@ -58,3 +58,20 @@
 
 * Float number problem in solidity(CAUTION!):
     No Floating-Point Support: Solidity does not support floating-point numbers or decimals directly. All values must be integers. if the calculation is less than 1 the result will be 0 by default! BE CAUTION !
+
+# git command:
+    git remote add origin <REMOTE_URL>
+    #Sets the new remote
+    
+    git remote -v
+    # Verifies the new remote url
+
+    git push -origin main
+    # Pushes the changes in the local repository up to the remote repository you..
+
+# if you change or add file path of test file (.t.sol) or scripte file (.s.sol) you need to do forge clean and forge build so the system can understand your project structure to find the relevant files and how to execute them
+
+# cast (will explain more later)
+    cast sig "fund" (will produce hex for evm can understand so you can verify you're calling the right function by comparring hex from metamask and terminal here)
+    cast --calldata-decode "fund()" 0xa7ea5e4e (hex that metamask gave back) ## will explain more later
+    ## cast sig "*function name*"
